@@ -1,4 +1,4 @@
-import Email from '../controllers/mail-config'
+import Email from '../controllers/mail-controller'
 
 export default function mail_routes(app, router) {
 

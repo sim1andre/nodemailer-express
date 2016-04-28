@@ -2,7 +2,7 @@ import Mail from '../config/mail-config'
 
 class Email {
 
-  static responce(req, res, next) {
+  static response(req, res, next) {
 
     let fields = {
       from: req.body.sender ? req.body.sender : req.query.sender,
@@ -18,7 +18,7 @@ class Email {
         return next(err)
       }
       else{
-        res.send(req.body.responce ? req.body.responce : req.query.responce)
+        res.send(req.body.response ? req.body.response : req.query.response)
       }
 
     })
